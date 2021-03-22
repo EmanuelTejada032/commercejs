@@ -1,11 +1,14 @@
 import React from 'react'
 
+import Products from './components/Products/Products.jsx'
+
+
 function App() {
     return (
         <div>
-            <h1>E-commerce</h1>
+            <Products />
         </div>
     )
 }
 
-export default App
+export default App;
