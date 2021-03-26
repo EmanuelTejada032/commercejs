@@ -37,7 +37,7 @@ function App() {
         setCart(cart)
     }
 
-    console.log(cart);
+   
 
     useEffect(() => {
         fetchProducts();

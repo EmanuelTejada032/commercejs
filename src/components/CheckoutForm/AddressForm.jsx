@@ -34,9 +34,9 @@ const AddressForm = ({checkoutToken, next}) => {
     }
 
     const fetchShippingOptions = async (checkoutTokenId, country, region = null) => {
-         console.log(country, region, checkoutTokenId)
+         
          const options = await commerce.checkout.getShippingOptions(checkoutTokenId, {country, region});
-         console.log(options)
+         
          setShippingOptions(options);
          setShippingOption(options[0].id);
     } 
