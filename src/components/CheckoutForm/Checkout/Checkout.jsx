@@ -26,8 +26,20 @@ const Checkout = ({cart}) => {
         generateToken();
     }, [cart])
 
+    const nextStep = () => setActiveStep((prevStep) => prevStep + 1 )
+    const prevStep = () => setActiveStep((prevStep) => prevStep - 1 )
+
+    const next = () => {
+            nextStep()
+    }
+
+    const prev = () => {
+        prevStep();
+    }
+
+
     const Form = () => (
-        activeStep === 0 ? <AddressForm checkoutToken={checkoutToken} /> : <PaymentForm />
+        activeStep === 0 ? <AddressForm checkoutToken={checkoutToken} next={next} /> : <PaymentForm />
     )
 
     const Confirmation  = () => (
