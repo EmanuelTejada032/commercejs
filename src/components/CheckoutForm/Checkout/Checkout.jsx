@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button} from '@material-ui/core'
+import {Link} from 'react-router-dom'
 
 import {commerce } from '../../../lib/Commerce'
 import useStyles from './styles'
@@ -8,7 +9,7 @@ import PaymentForm from '../PaymentForm'
 
 const steps = ["Shipping address", "Payment details"]
 
-const Checkout = ({cart}) => {
+const Checkout = ({cart, handleEmptyCart}) => {
     const [activeStep, setActiveStep] = useState(0)
     const [checkoutToken, setCheckoutToken] = useState(null);
     const  classes = useStyles();
@@ -43,7 +44,15 @@ const Checkout = ({cart}) => {
     )
 
     const Confirmation  = () => (
-        <div>Confirmation</div>
+        <>
+            <div>
+                <Typography variant="h5">Thank you for your purchase!</Typography>
+                <Divider className={classes.divider} />
+                <Typography variant="subtitle2">Order ref: RNo.664fas6655fa</Typography>
+            </div>
+            <br />
+            <Button component={Link} variant="outlined" type="button" to="/" onClick={handleEmptyCart} >Back to home</Button>
+        </>
     )
 
 
