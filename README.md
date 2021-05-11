@@ -24,7 +24,7 @@ This application made using the commerce js api to store product data and also a
   There are several things needed in order to run the app localy. 
   You can start by downloading the code or clone the repository.
   
-  Once you've downloaded the repository you can run the command below on your terminal inside the project.
+  Once you've downloaded the repository you can run the command below on your terminal inside the project directory.
   
   ```javascript
     npm install
