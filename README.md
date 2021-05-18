@@ -18,7 +18,7 @@ This application made using the commerce js api to store product data and also a
 
 ## Install guide
   
-  You can see the app live project here [Commercejs](https://commercejs-shopping-cart.netlify.app/) or folow the steps below to install locally and deploy 
+  You can see the app live project here [Commercejs](https://shopping-cart.emanueltejada.site/) or folow the steps below to install locally and deploy 
   with your own API credentials.
   
   There are several things needed in order to run the app localy. 
