@@ -7,14 +7,6 @@ This application made using the commerce js api to store product data and also a
   * Material UI
   * Styled Components
   * Commerce JS API
- 
-## Topics covered in this app
-  
-  * React router dom
-  * React Hook Form
-  * Fetching data from API (Commerce js API)
-  * Add, Remove and update items in the cart
-  * Simulate checkout with a stepper form using material UI
 
 ## Install guide
   
