@@ -1,6 +1,9 @@
 # Commercejs
 This application made using the commerce js api to store product data and also add some functionalities like adding items to the cart, removing items and more.
 
+![Commerce js store index](https://res.cloudinary.com/emanueltejada/image/upload/v1618505015/Test/Screenshot_1_hhzfok.png)
+
+
 ## Technology used
   
   * React
